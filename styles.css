@@ -314,9 +314,9 @@ h3 { font-size: clamp(1.4rem, 4vw, 2rem); }
 }
 
 @keyframes softWave {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-2px); }
-  100% { transform: translateY(0); }
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.012); }
+  100% { transform: translateY(0) scale(1); }
 }
 
 
