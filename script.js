@@ -22,12 +22,12 @@ const galleries = {
   "gal-hectarea": [
     "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-55.115,-27.513,-55.086,-27.491&bboxSR=4326&size=1200,800&imageSR=4326&format=jpg&f=image",
     "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-55.112,-27.509,-55.092,-27.496&bboxSR=4326&size=1200,800&imageSR=4326&format=jpg&f=image",
-    "https://staticmap.openstreetmap.de/staticmap.php?center=-27.502216,-55.101156&zoom=16&size=1200x700&markers=-27.502216,-55.101156,red-pushpin"
+    "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-55.109,-27.507,-55.094,-27.497&bboxSR=4326&size=1200,800&imageSR=4326&format=jpg&f=image"
   ],
   "gal-chacra": [
     "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-55.255,-27.128,-55.216,-27.087&bboxSR=4326&size=1200,800&imageSR=4326&format=jpg&f=image",
     "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-55.249,-27.122,-55.223,-27.094&bboxSR=4326&size=1200,800&imageSR=4326&format=jpg&f=image",
-    "https://staticmap.openstreetmap.de/staticmap.php?center=-27.1073742,-55.2356613&zoom=13&size=1200x700&markers=-27.1073742,-55.2356613,red-pushpin"
+    "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-55.244,-27.117,-55.228,-27.100&bboxSR=4326&size=1200,800&imageSR=4326&format=jpg&f=image"
   ]
 };
 
@@ -52,5 +52,6 @@ if (phoneText) phoneText.textContent = whatsappRaw;
 
 const footer = document.getElementById("footer-text");
 if (footer) {
-  footer.textContent = `© ${new Date().getFullYear()} GKACHELE | Todos los derechos reservados. Codigo y contenido: propiedad intelectual. Contacto: ${email}`;
+  const year = new Date().getFullYear();
+  footer.innerHTML = `© ${year} GKACHELE™. Todos los derechos reservados.<br>Desarrollado desde noviembre 2025 por GKACHELE<br>Código propiedad de GKACHELE © ${year} - Prohibida su reproducción sin autorización`;
 }
