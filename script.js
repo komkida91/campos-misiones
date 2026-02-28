@@ -17,7 +17,8 @@ const links = {
 ["btn-mail-top", "btn-mail"].forEach((id) => {
   const el = document.getElementById(id);
   if (!el) return;
-  el.addEventListener("click", () => {
+  el.addEventListener("click", (event) => {
+    event.preventDefault();
     window.location.href = links.mailto;
   });
 });
