@@ -1,7 +1,8 @@
 ﻿const email = "gkachele91@gmail.com";
 const whatsappRaw = "0034671579211";
 const whatsappDigits = whatsappRaw.replace(/\D/g, "").replace(/^00/, "");
-const instagramUrl = "https://www.instagram.com/elanchok?utm_source=qr&igsh=MWk5ZnBwbTR0cnYwNQ==";
+const instagramUrl = "https://www.instagram.com/elanchok?igsh=MWk5ZnBwbTR0cnYwNQ==";
+const facebookUrl = "https://www.facebook.com/share/1MxSut1VKh/";
 
 const links = {
   mailto: `mailto:${email}?subject=${encodeURIComponent("Consulta por propiedades rurales en Misiones")}`,
@@ -46,6 +47,8 @@ Object.entries(galleries).forEach(([id, images]) => {
 
 const instagramLink = document.getElementById("instagram-link");
 if (instagramLink) instagramLink.href = instagramUrl;
+const facebookLink = document.getElementById("facebook-link");
+if (facebookLink) facebookLink.href = facebookUrl;
 
 const phoneText = document.getElementById("phone-text");
 if (phoneText) phoneText.textContent = whatsappRaw;
