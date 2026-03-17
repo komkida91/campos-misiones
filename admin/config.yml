@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "configuracion"
+    label: "Configuración del Sitio"
+    files:
+      - label: "Contenido principal"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Marca", name: "brand", widget: "string" }
+          - { label: "Título principal", name: "hero_title", widget: "string" }
+          - { label: "Texto principal", name: "hero_lead", widget: "text" }
+          - { label: "Email de contacto", name: "email", widget: "string" }
+          - { label: "WhatsApp (con prefijo, solo números)", name: "whatsapp_raw", widget: "string" }
+          - { label: "Mensaje inicial WhatsApp", name: "whatsapp_message", widget: "string" }
+          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+          - { label: "Instagram URL", name: "instagram_url", widget: "string" }
+          - { label: "Mapa propiedad 1 (embed URL)", name: "map1_embed_url", widget: "string" }
+          - { label: "Mapa propiedad 1 (link URL)", name: "map1_link_url", widget: "string" }
+          - { label: "Mapa propiedad 2 (embed URL)", name: "map2_embed_url", widget: "string" }
+          - { label: "Mapa propiedad 2 (link URL)", name: "map2_link_url", widget: "string" }
